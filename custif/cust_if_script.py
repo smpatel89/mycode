@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
+import sys
 
 print("What is the wind speed (mph)?")
 speed = 0
 try:
     speed = float(input())
 except Exception as e:
+    print("Write a number next time...")
     sys.exit(0)
 
 if speed >= 157:
