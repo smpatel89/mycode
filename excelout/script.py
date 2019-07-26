@@ -9,8 +9,10 @@ import pyexcel
 # Request data from user
 def get_ip_data():
     input_ip = input("\nWhat is the IP address? ")
-    input_driver = input("What is the driver associated with this device? ")
-    d = {"IP": input_ip, "driver": input_driver}
+    input_class = input("What is the device classification? ")
+    input_name = input("What is the device hostname? ")
+    input_purpose = input("What is the device purpose? ")
+    d = {"IP": input_ip, "class": input_class, "input_name": input_name, "input_purpose": input_purpose}
     return d
 
 ## This code is left turned off, but might help visualize how pyexcel works with data sets.
